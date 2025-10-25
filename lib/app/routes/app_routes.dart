@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_mvvm_template/core/constant/route_names.dart';
 
+import '../../core/constant/route_names.dart';
+import '../../features/home/presentation/view/screen/home_screen.dart';
 import '../../features/splash/splash_screen.dart';
 
 class AppRoutes {

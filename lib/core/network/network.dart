@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_mvvm_template/app/config/app_config.dart';
 import 'package:flutter_mvvm_template/core/services/local_storage_service/token_storage.dart';
 
 import '../constant/api_endpoints.dart';
@@ -11,7 +12,7 @@ class Network {
 
   Network._internal() {
     BaseOptions options = BaseOptions(
-      baseUrl: ApiEndPoints.baseUrl,
+      baseUrl: AppConfig.baseUrl,
       connectTimeout: const Duration(seconds: 60),
       receiveTimeout: const Duration(seconds: 60),
       headers: {
